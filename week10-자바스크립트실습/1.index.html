@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./1.style.css" />
+  </head>
+
+  <body>
+    <h1>MBTI 테스트</h1>
+    <ul id="list">
+      <li class="test">
+        <h2>E vs I</h2>
+        <input
+          type="checkbox"
+          name="one"
+          value="E"
+          onclick="getCheckboxValue(event)"
+        />
+        E
+        <input
+          type="checkbox"
+          name="one"
+          value="I"
+          onclick="getCheckboxValue(event)"
+        />
+        I
+      </li>
+      <li class="test">
+        <h2>N vs S</h2>
+        <input
+          type="checkbox"
+          name="two"
+          value="N"
+          onclick="getCheckboxValue(event)"
+        />
+        N
+        <input
+          type="checkbox"
+          name="two"
+          value="S"
+          onclick="getCheckboxValue(event)"
+        />
+        S
+      </li>
+      <li class="test">
+        <h2>T vs F</h2>
+        <input
+          type="checkbox"
+          name="three"
+          value="T"
+          onclick="getCheckboxValue(event)"
+        />
+        T
+        <input
+          type="checkbox"
+          name="three"
+          value="F"
+          onclick="getCheckboxValue(event)"
+        />
+        F
+      </li>
+      <li class="test">
+        <h2>J vs P</h2>
+        <input
+          type="checkbox"
+          name="four"
+          value="J"
+          onclick="getCheckboxValue(event)"
+        />
+        J
+        <input
+          type="checkbox"
+          name="four"
+          value="P"
+          onclick="getCheckboxValue(event)"
+        />
+        P
+      </li>
+    </ul>
+    <button type="button" class="submit btn" onclick="js:submit()">
+      결과 보기
+    </button>
+    <div id="result">
+      <h2>당신의 MBTI는</h2>
+    </div>
+
+    <script src="./1.app.js"></script>
+  </body>
+</html>
